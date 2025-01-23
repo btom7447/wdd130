@@ -93,7 +93,3 @@ main .hero article img {
     height: auto;
     object-fit: cover;
 }
-
-* {
-    outline: red solid 1px;
-}
