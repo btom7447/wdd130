@@ -93,3 +93,7 @@ main .hero article img {
     height: auto;
     object-fit: cover;
 }
+
+footer .sociallinks a {
+    text-decoration: none;
+}
