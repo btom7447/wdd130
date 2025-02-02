@@ -15,9 +15,9 @@
 }
 
 header {
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: auto 1fr; 
     align-items: center;
     gap: 20px;
     background-color: var(--accent1-color);
@@ -26,6 +26,10 @@ header img {
     width: 70px;
     height: 70px;
     object-fit: cover;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
 }
 header ul {
     list-style-type: none;
@@ -93,7 +97,79 @@ main .hero article img {
     height: auto;
     object-fit: cover;
 }
-
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+main .history-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    padding-top: 50px;
+}
+main .history-section h2 {
+    position: absolute;
+    top: 20px;
+    transform: translateX(-50%);
+}
+main  .history-section img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+main .adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    justify-items: center; 
+}
+.adventure-images figure {
+    margin: 0;
+    text-align: center;
+}
+.adventure-images figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.adventure-images figcaption {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    color: var(--secondary-color);
+    padding-top: 10px;
+}
+footer {
+    padding: 20px;
+    background-color: var(--accent1-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--secondary-color);
+    justify-self: center;
+    text-align: center;
+    flex: 1;
+}
+footer .sociallinks {
+    justify-self: end;
+    display: flex;
+    gap: 15px; 
+}
+footer .sociallinks img {
+    width: 30px; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+footer .sociallinks img:hover {
+    transform: scale(1.1); 
+}
 footer .sociallinks a {
     text-decoration: none;
 }
