@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact page of white water rafting website">
+    <meta name="author" content="Benjamin Tom">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <img src="./images/wrr-logo.png" alt="logo of wwr">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="company-info">
+            <div class="info">
+                <h2>Company Information</h2>
+                <p><strong>Address:</strong> 123 River Lane, Rapids City, RC 54321</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18..."
+                    width="400" height="300" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="./images/employe-picture-one.jpg" alt="Happy employee 1">
+                    <p>John Doe - Tour Guide</p>
+                </div>
+                <div class="profile">
+                    <img src="./images/employe-picture-two.jpg" alt="Happy employee 2">
+                    <p>Philip Arthur - Customer Service</p>
+                </div>
+                <div class="profile">
+                    <img src="./images/employe-picture-three.jpg" alt="Happy employee 3">
+                    <p>Michael Brown - Safety Specialist</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <p>Send us a message and we will respond within 24 hours</p>
+            <form action="#" method="post">
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required
+                    placeholder="Enter your full name"
+                >
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required
+                    placeholder="Enter your email"
+                >
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                <div class="radio-group">
+                    <p>Purpose of contact</p>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                        General Inquiry
+                    </label>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                        Reservation Question
+                    </label>
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                        Website Suggestion
+                    </label>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                </div>
+                
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="https://app.moqups.com/R2MCdh6hg4iiLkIr4fgakJYCDw5nyi06/view/page/ad12de680?ui=0">Wireframe</a>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="./images/facebook-icon.webp" alt="facebook icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="./images/instagram-icon.png" alt="instagram icon">
+            </a>
+            <a href="https://github.com">
+                <img src="./images/github-icon.png" alt="github icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
