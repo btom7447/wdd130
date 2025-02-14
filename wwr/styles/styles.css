@@ -12,6 +12,7 @@
     --accent1-color: #FFBF69;
     --accent2-color: #2EC4B6;
     --white: #FFFFFF;
+    --test: #f8a54c35;
 }
 
 header {
@@ -75,6 +76,65 @@ main .hero h1 {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     z-index: 1;
+}
+.home-page .home-hero {
+    position: relative;
+}
+.home-page .home-hero img {
+    display: block;
+    width: 100%;
+    height: 90dvh;
+    position: relative;
+}
+
+.home-page .home-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+.home-page .home-hero .caption {
+    position: absolute;
+    top: 30%;
+    transform: translateX(-50%);
+    color: var(--white);
+    left: 50%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-page .caption h1 {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.home-page .home-hero p {
+    margin-top: 20px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white);
+}
+.home-page .home-hero button {
+    margin-top: 50px;
+    padding: 20px 50px;
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+.home-page .home-hero button a {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
 }
 main .hero article {
     width: 100%;
@@ -304,7 +364,6 @@ main .employees {
     margin-top: 20px;
 }
 .contact-form button {
-    column-span:  1 / -1;
     padding: 20px;
     background-color: var(--primary-color);
     color: white;
@@ -314,3 +373,98 @@ main .employees {
     font-family: 'Figtree', sans-serif;
 }
 
+.featured-grid {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.featured-grid h1 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.featured-grid .feature-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.feature-section .feature {
+    padding: 20px;
+}
+.feature-section .feature img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.newsletter {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--secondary-color);
+}
+.newsletter h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.newsletter form {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+.newsletter input {
+    padding: 20px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Figtree', sans-serif;
+}
+.newsletter button {
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.newsletter button img {
+    width: 30px;
+}
+
+.trip-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 100px;
+}
+.trip {
+    border: solid 1px var(--white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.book-button {
+    margin: 20px;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
